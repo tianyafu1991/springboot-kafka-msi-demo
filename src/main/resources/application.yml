@@ -2,7 +2,7 @@ server:
   port: 8088
 spring:
   kafka:
-    bootstrap-servers: hadoop004:9092,hadoop005:9092,hadoop006:9092
+    bootstrap-servers: master:9092,slave01:9092,slave02:9092
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
